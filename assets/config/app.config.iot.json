@@ -1,0 +1,89 @@
+{
+  "timePerSecond" :300,
+  "decryptKey" : "qOItVQ7YDKIIAMuD",
+  "swalConfig" : {
+      "invalid_param_40300":{
+        "en":{
+          "type": "error",
+          "title": "Error, invalid request",
+          "text": "",
+          "confirmButtonText": "Back"   
+        },
+        "th":{
+          "type": "error",
+          "title": "เกิดข้อผิดพลาด คำขอไม่ถูกต้อง",
+          "text": "",
+          "confirmButtonText": "กลับ"   
+        }
+      },
+      "unknow_url_40400":{
+        "en":{
+          "type": "error",
+          "title": "Error, invalid request",
+          "text": "",
+          "confirmButtonText": "Back"   
+        },
+        "th":{
+          "type": "error",
+          "title": "เกิดข้อผิดพลาด คำขอไม่ถูกต้อง",
+          "text": "",
+          "confirmButtonText": "กลับ"   
+        }
+      },
+      "system_error_50000":{
+          "en":{
+            "type": "error",
+            "title": "Error, please try again later",
+            "text": "",
+            "confirmButtonText": "Back"   
+          },
+          "th":{
+            "type": "error",
+            "title": "มีข้อผิดพลาดเกิดขึ้น กรุณาลองใหม่อีกครั้งในภายหลัง",
+            "text": "",
+            "confirmButtonText": "กลับ"   
+          }
+        },   
+        "empty_resultData_20000":{
+          "en":{
+            "type": "error",
+            "title": "You have not registered Mobile ID",
+            "text": "",
+            "confirmButtonText": "Back"   
+          },
+          "th":{
+            "type": "error",
+            "title": "คุณยังไม่ได้สมัครบริการแทนบัตร",
+            "text": "",
+            "confirmButtonText": "กลับ"   
+          }
+        },   
+        "public_onChain_false_40301":{
+          "en":{
+            "type": "error",
+            "title": "Sorry, you can’t use the service at this moment.",
+            "text": "",
+            "confirmButtonText": "Back"   
+          },
+          "th":{
+            "type": "error",
+            "title": "คุณยังไม่สามารถใช้บริการได้ในขณะนี้",
+            "text": "",
+            "confirmButtonText": "กลับ"   
+          }
+        },"session_expire_20400":{
+          "en":{
+            "type": "error",
+            "title": "Session Expire",
+            "text": "",
+            "confirmButtonText": "OK"   
+          },
+          "th":{
+            "type": "error",
+            "title": "Session หมดอายุหรือมีการใช้งานซ้ำซ้อน",
+            "text": "",
+            "confirmButtonText": "ตกลง"   
+          }
+        }
+    }
+}

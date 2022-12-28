@@ -1,0 +1,638 @@
+@font-face {
+  /* font-family: DB Helvethaica X; */
+  /* src: url('/assets/font/DB\ HelvethaicaMon\ X\ v3.2.ttf') format('truetype'); */
+  font-family: DB Heavent;
+  src: url("/assets/font/DB_HeaventRounded_Cond_v3.2.ttf") format("truetype");
+}
+blockquote {
+  font-family: "DB Heavent";
+  font-size: 18px;
+}
+
+.background {
+  height: auto;
+}
+
+h2 {
+  font-family: "DB Heavent";
+}
+
+.backgroundQR {
+  background-color: #ffffff;
+  color: #39464e;
+  display: block;
+  font-family: DB Heavent;
+  height: 91%;
+  /* height: auto; */
+  /* position: fixed; */
+  text-align: center;
+  /* width:96%; */
+  width: 100%;
+}
+
+.qrSize {
+  margin-left: 40px;
+  margin-right: auto;
+  /* margin-top:10%; */
+  max-width: 356px;
+}
+
+.timeCountdown {
+  color: #ffffff;
+  display: inline-block;
+  font-size: 24pt;
+}
+
+.currentDate {
+  display: block;
+  font-size: 20pt;
+}
+
+.expire-font {
+  font-size: 63pt;
+  font-weight: bold;
+  margin-top: 10%;
+}
+
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.text-center {
+  text-align: center;
+}
+
+.qr-footer {
+  background-color: #b2d234;
+  bottom: 0px;
+  display: block;
+  height: 8%;
+  left: 0px;
+  position: fixed;
+  width: 100%;
+}
+
+.date-over-footer {
+  bottom: 5%;
+  display: block;
+  height: 8%;
+  position: fixed;
+  width: 100%;
+}
+
+.cancelbtn {
+  background-color: #ffffff;
+  border: 2px solid #cccccc;
+  border-radius: 5px;
+  color: #82af05;
+  font-family: DB Heavent;
+  font-size: 42pt;
+  height: 80px;
+  margin: 12px;
+  width: 217px;
+  @media screen and (max-width: 414px) {
+    width: 40%;
+    height:70px;
+  }
+
+}
+.acceptbtn {
+  background-color: #b2d234;
+  border: none;
+  border-radius: 5px;
+  color: #39464e;
+  font-family: DB Heavent;
+  font-size: 42pt;
+  height: 80px;
+  margin: 8px;
+  width: 217px;
+
+  @media screen and (max-width: 414px) {
+    width: 40%;
+    height:70px;
+  }
+
+}
+.startServicebtn {
+  background-color: #b2d234;
+  border: none;
+  border-radius: 5px;
+  color: #39464e;
+  font-family: DB Heavent;
+  font-size: 18pt;
+  height: 40px;
+  margin: 8px;
+  width: 120px;
+}
+.footer {
+  text-align: center;
+  position: sticky;
+  background-color: white;
+  width: 100%;
+  bottom: 0;
+}
+
+@media screen and (max-width: 1334px) {
+  .expire-font {
+    font-size: 63pt;
+    font-weight: bold;
+    margin-top: 20%;
+  }
+  .qrSize {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    margin-top: -20px;
+  }
+}
+@media screen and (min-width: 460px) {
+  .header-qr-text {
+    font-size: 22pt;
+  }
+}
+
+/* Iphone 5/SE/6/7/8/6+/7+/8+ & Gaxxy S5 & Pixel 2 */
+@media screen and (min-width: 320px) and (-webkit-min-device-pixel-ratio: 2) and (max-width: 812px) {
+  .expire-font {
+    font-size: 24pt;
+    font-weight: bold;
+    margin-top: 60%;
+  }
+  .qrSize {
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top:15%; */
+    margin-top: -20px;
+    max-width: 90%;
+  }
+  .cancelbtn {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    color: #82af05;
+    font-family: DB Heavent;
+    font-size: 18pt;
+    height: 40px;
+    margin: 6px;
+    width: 120px;
+  }
+  .acceptbtn {
+    background-color: #b2d234;
+    border: none;
+    border-radius: 5px;
+    color: #39464e;
+    font-family: DB Heavent;
+    font-size: 18pt;
+    height: 40px;
+    margin: 4px;
+    width: 120px;
+  }
+  .startServicebtn {
+    background-color: #b2d234;
+    border: none;
+    border-radius: 5px;
+    color: #39464e;
+    font-family: DB Heavent;
+    font-size: 18pt;
+    height: 40px;
+    margin: 4px;
+    width: 120px;
+  }
+
+  .swal2-header {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    margin-top: 40px !important;
+  }
+
+  .swal2-styled.swal2-confirm {
+    border: 0;
+    border-radius: 0.25em;
+    background: initial;
+    background-color: #3085d6;
+    color: #39464e !important;
+    font-size: 1.0625em;
+  }
+}
+
+:focus {
+  outline: none;
+}
+
+.modal-backbtn {
+  background-color: #ffffff !important;
+  border: 2px solid #cccccc !important;
+  border-radius: 5px !important;
+  color: #82af05 !important;
+  font-family: DB Heavent !important;
+  font-size: 20pt !important;
+  height: 43px !important;
+  margin: 12px !important;
+  width: 100px !important;
+  padding: 0px 2px 0px 0px !important;
+}
+
+.modal-backbtn:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #ffffff !important;
+}
+.modal-back-timeoutbtn {
+  background-color: #ffffff !important;
+  border: 2px solid #cccccc !important;
+  border-radius: 5px !important;
+  color: #82af05 !important;
+  font-family: DB Heavent !important;
+  font-size: 20pt !important;
+  height: 43px !important;
+  margin: 12px !important;
+  width: auto !important;
+  padding: 3px 10px 0 10px !important;
+}
+
+.modal-back-timeoutbtn:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #ffffff !important;
+}
+
+.modal-confirmbtn {
+  background-color: #b2d234 !important;
+  border: none !important;
+  color: #39464e !important;
+  margin: 8px !important;
+  border-radius: 5px !important;
+  font-family: DB Heavent !important;
+  font-size: 20pt !important;
+  height: 43px !important;
+  width: 100px !important;
+  padding: 0px 2px 0px 0px !important;
+}
+
+.modal-confirmbtn:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #ffffff !important;
+}
+
+.modal-confirm-timeoutbtn {
+  background-color: #b2d234 !important;
+  border: none !important;
+  color: #39464e !important;
+  margin: 8px !important;
+  border-radius: 5px !important;
+  font-family: DB Heavent !important;
+  font-size: 20pt !important;
+  height: 43px !important;
+  width: auto !important;
+  padding: 3px 10px 0 10px !important;
+}
+
+.modal-confirm-timeoutbtn:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #ffffff !important;
+}
+
+@media screen and (min-width: 768px) {
+  .iframe-container {
+    width: 101%;
+    height: 100vh;
+    overflow-y: hidden;
+    border: none;
+  }
+  .width-content-modal {
+    /* width: 75% !important; */
+    width: auto;
+  }
+  .modal-header-text-th {
+    font-size: 34pt;
+    line-height: 40px;
+    margin-top: 0px;
+  }
+  .modal-body-text-th {
+    font-family: DB Heavent;
+    font-size: 29pt;
+    line-height: 40px;
+  }
+  .modal-header-text-en {
+    font-size: 34pt;
+    line-height: 40px;
+    margin-top: 0px;
+  }
+  .modal-body-text-en {
+    font-family: DB Heavent;
+    font-size: 26pt;
+    line-height: 40px;
+  }
+  .modal-click-text {
+    font-family: DB Heavent;
+    font-size: 26pt;
+    line-height: 40px;
+  }
+  .modal-body-height {
+    height: 170px;
+  }
+  .modal-body-height-en {
+    height: 215px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+  .iframe-container {
+    width: 101%;
+    height: 90vh;
+    padding-left: 0px;
+    overflow-y: hidden;
+    border: none;
+  }
+  .width-content-modal {
+    /* width: 60% !important; */
+    width: auto;
+  }
+  .modal-header-text-th {
+    font-size: 34pt;
+    line-height: 40px;
+    margin-top: 35px;
+  }
+  .modal-body-text-th {
+    font-family: DB Heavent;
+    font-size: 29pt;
+    line-height: 40px;
+  }
+  .modal-header-text-en {
+    font-size: 34pt;
+    line-height: 40px;
+    margin-top: 35px;
+  }
+  .modal-body-text-en {
+    font-family: DB Heavent;
+    font-size: 26pt;
+    line-height: 40px;
+  }
+  .modal-click-text {
+    font-family: DB Heavent;
+    font-size: 26pt;
+    line-height: 40px;
+  }
+  .modal-body-height {
+    height: 150px;
+  }
+  .modal-body-height-en {
+    height: 215px;
+  }
+}
+
+.header-qr-info {
+  font-size: 14pt;
+  padding: 10px 10px;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .iframe-container {
+    width: 101.5%;
+    height: 80vh;
+    padding-left: 0px;
+    overflow-y: hidden;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .iframe-container {
+    width: 102%;
+    height: 90vh;
+    overflow-y: hidden;
+    border: none;
+  }
+  .width-content-modal {
+    /* width: 75% !important; */
+    width: auto;
+  }
+  .modal-header-text-th {
+    font-size: 21pt;
+    line-height: 25px;
+    margin-top: -10px;
+  }
+  .modal-body-text-th {
+    font-family: DB Heavent;
+    font-size: 20pt;
+    line-height: 25px;
+  }
+  .modal-header-text-en {
+    font-size: 21pt;
+    line-height: 25px;
+    margin-top: -10px;
+  }
+  .modal-body-text-en {
+    font-family: DB Heavent;
+    font-size: 20pt;
+    line-height: 25px;
+  }
+  .modal-body-height {
+    height: 110px;
+  }
+  .modal-body-height-en {
+    height: 120px;
+  }
+  .modal-click-text {
+    font-family: DB Heavent;
+    font-size: 19pt;
+    line-height: 25px;
+  }
+}
+@media screen and (max-width: 494px) {
+  .width-content-modal {
+    /* width: 78% !important; */
+    width: auto;
+  }
+  .modal-body-height {
+    height: 130px;
+  }
+  .modal-body-height-en {
+    height: 130px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .modal-header-text-th {
+    font-size: 22pt;
+    line-height: 25px;
+    margin-top: 0px;
+  }
+  .modal-body-text-th {
+    font-family: DB Heavent;
+    font-size: 22pt;
+    line-height: 25px;
+  }
+  .modal-header-text-en {
+    font-size: 22pt;
+    line-height: 25px;
+    margin-top: 0px;
+  }
+  .modal-body-text-en {
+    font-family: DB Heavent;
+    font-size: 19pt;
+    line-height: 25px;
+  }
+  .modal-click-text {
+    font-family: DB Heavent;
+    font-size: 19pt;
+    line-height: 25px;
+  }
+  .width-content-modal {
+    /* width: 85% !important; */
+    width: auto;
+  }
+  .modal-body-height {
+    height: 100px;
+  }
+  .modal-body-height-en {
+    height: 130px;
+  }
+}
+
+@media screen and (max-width: 401px) {
+  .modal-header-text-th {
+    font-size: 21pt;
+    line-height: 25px;
+    margin-top: 0px;
+  }
+  .modal-body-text-th {
+    font-family: DB Heavent;
+    font-size: 20pt;
+    line-height: 25px;
+  }
+  .modal-header-text-en {
+    font-size: 21pt;
+    line-height: 25px;
+    margin-top: 0px;
+  }
+  .modal-body-text-en {
+    font-family: DB Heavent;
+    font-size: 17pt;
+    line-height: 25px;
+  }
+  .modal-click-text {
+    font-family: DB Heavent;
+    font-size: 17pt;
+    line-height: 25px;
+  }
+  .width-content-modal {
+    /* width: 85% !important; */
+    width: auto;
+  }
+  .modal-body-height {
+    height: 90px;
+  }
+  .modal-body-height-en {
+    height: 130px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .modal-header-text-th {
+    font-size: 20pt;
+    line-height: 25px;
+    margin-top: -30px;
+  }
+  .modal-body-text-th {
+    font-family: DB Heavent;
+    font-size: 19pt;
+    line-height: 25px;
+  }
+  .modal-header-text-en {
+    font-size: 20pt;
+    line-height: 25px;
+    margin-top: -30px;
+  }
+  .modal-body-text-en {
+    font-family: DB Heavent;
+    font-size: 17pt;
+    line-height: 25px;
+  }
+  .modal-click-text {
+    font-family: DB Heavent;
+    font-size: 17pt;
+    line-height: 25px;
+  }
+  .width-content-modal {
+    /* width: 85% !important; */
+    width: auto;
+  }
+  .modal-body-height {
+    height: 100px;
+  }
+  .modal-body-height-en {
+    height: 140px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .modal-header-text-th {
+    font-size: 20pt;
+    line-height: 25px;
+    margin-top: -30px;
+  }
+  .modal-body-text-th {
+    font-family: DB Heavent;
+    font-size: 16pt;
+    line-height: 25px;
+  }
+  .modal-header-text-en {
+    font-size: 19pt;
+    line-height: 25px;
+    margin-top: -30px;
+  }
+  .modal-body-text-en {
+    font-family: DB Heavent;
+    font-size: 14pt;
+    line-height: 25px;
+  }
+  .modal-click-text {
+    font-family: DB Heavent;
+    font-size: 14pt;
+    line-height: 25px;
+  }
+  .width-content-modal {
+    /* width: 85% !important; */
+    width: auto;
+  }
+  .modal-body-height {
+    height: 90px;
+  }
+  .modal-body-height-en {
+    height: 130px;
+  }
+}
+
+.image-row {
+  display: flex;
+  position: relative;
+  padding-top: 10px;
+}
+.bbl-logo-style {
+  width: 35%;
+  height: 60%; 
+  position: absolute; 
+  object-fit: contain; 
+  bottom: 6px;
+  left: 16px;
+}
+
+.nbtc-logo-style {
+  width: 20%;  
+  height: 35%; 
+  position: relative; 
+  object-fit: contain; 
+  bottom: 4px;
+  left: 43%;
+}
+.ais-logo-style {
+  width:35%;  
+  height:40%; 
+  position: absolute; 
+  object-fit: contain; 
+  left: 62%;  
+  bottom: 8px;
+}

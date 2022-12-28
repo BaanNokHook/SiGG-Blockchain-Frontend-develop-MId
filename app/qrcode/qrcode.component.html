@@ -1,0 +1,73 @@
+<!-- <div class="container">
+        <div class="backgroundQR">
+             <span *ngIf="qrcode !='../../assets/loading.gif'" class="header-qr-info">โครงการแทนบัตร โดย กสทช. โทรคมนาคม และความร่วมมือจาก AIS และธนาคารกรุงเทพ ระยะทดสอบทดลอง (Sandbox)</span> 
+             <div *ngIf="qrcode !='../../assets/loading.gif'">
+            <div style="display: flex; position: relative;padding-top: 20px;">
+            <img src="../../assets/img/bbl-logo.png" width="35%" height="35%" style="position: absolute; object-fit: contain; bottom: 8px;left: 16px;">
+            <img src="../../assets/img/logo NBTC.JPG" width="20%"  height="20%" style="position: relative; object-fit: contain; bottom: 8px;left: 43%;" >
+            <img src="../../assets/img/logo AIS.JPG" width="35%"  height="35%" style="position: absolute; object-fit: contain; left: 62%;  bottom: 8px;">
+            </div> 
+          </div>
+              <div class="">
+              <h2  *ngIf="qrcode !='../../assets/loading.gif'">กรุณาแสดง QR Code นี้กับเจ้าหน้าที่</h2> 
+            <img *ngIf="!qrcodeexpire" class="img-center qrSize" [ngStyle]="{'margin-top' : qrcode !='../../assets/loading.gif' ? '0%' : '20%' }" id="qrLoader" [src]="qrcode">
+          </div>
+          <div class="row">
+          <div class="text-center">
+            <span class="currentDate"  *ngIf="qrcode !='../../assets/loading.gif'">
+                {{updateDateTH}} 
+            </span>
+          </div>
+        </div>
+          <div class="text-center" *ngIf="qrcode !='../../assets/loading.gif'" >
+            <span class="timeCountdown" style="color:#39464E;font-size:26pt;line-height: 30pt;" >
+                QR Code จะหมดอายุใน <span style="font-size:30pt">{{currentTime}}</span>  นาที 
+            </span>
+            <br>
+            <span  class="header-qr-info">ข้อมูลปลอดภัยโดย QR Code จะเปลี่ยนแปลงทุกครั้งที่ใช้งาน</span>
+          </div>
+        </div>
+      </div>  -->
+      <div class="container">
+          <div class="backgroundQR">
+               <span *ngIf="qrcode !='../../assets/loading.gif'" class="header-qr-info">โครงการแทนบัตร โดย กสทช. โทรคมนาคม และความร่วมมือจาก AIS และธนาคารกรุงเทพ ระยะทดสอบทดลอง (Sandbox)</span> 
+               <div *ngIf="qrcode !='../../assets/loading.gif'">
+                <div class="image-row">
+                  <img src="../../assets/img/bbl-logo.png" class="bbl-logo-style">
+                  <img src="../../assets/img/logo NBTC2.jpg" class="nbtc-logo-style">
+                  <img src="../../assets/img/logo AIS.JPG" class="ais-logo-style">
+                  </div>
+            </div>
+            <!-- <div class="" style="margin-top:20%;"> -->
+                <div class="">
+                <h2  *ngIf="lang == 'th' && qrcode !='../../assets/loading.gif'">กรุณาแสดง QR Code นี้กับเจ้าหน้าที่</h2> 
+                <h2  class="header-qr-text" *ngIf="lang != 'th' && qrcode !='../../assets/loading.gif'">Please show this QR Code to bank teller.</h2> 
+              <img *ngIf="!qrcodeexpire" class="img-center qrSize" [ngStyle]="{'margin-top' : qrcode !='../../assets/loading.gif' ? '0%' : '20%' }" id="qrLoader" [src]="qrcode">
+            </div>
+            <div class="row">
+            <div class="text-center">
+              <span class="currentDate"  *ngIf="lang == 'th' && qrcode !='../../assets/loading.gif'">
+                  {{updateDateTH}} 
+                <!-- 30 สิงหาคม 2562 18:05:00 น. -->
+              </span>
+              <span class="currentDate" *ngIf="lang != 'th' && qrcode !='../../assets/loading.gif'">
+               {{updateDate | date:'dd MMMM yyyy hh:mm:ss a'}}
+                <!-- 02 September 2019 02:19:00 PM -->
+              </span>
+            </div>
+          </div>
+            <div class="text-center">
+              <span *ngIf="lang == 'th'&& qrcode !='../../assets/loading.gif'" class="timeCountdown" style="color:#39464E;font-size:26pt" >
+                  QR Code จะหมดอายุใน <span style="font-size:30pt">{{currentTime}}</span>  นาที 
+              </span>
+              <br>
+              <span *ngIf="lang == 'th'&& qrcode !='../../assets/loading.gif'" class="header-qr-info">ข้อมูลปลอดภัยโดย QR Code จะเปลี่ยนแปลงทุกครั้งที่ใช้งาน</span>
+              <span  *ngIf="lang != 'th'&& qrcode !='../../assets/loading.gif'" class="timeCountdown" style="color:#39464E">
+                  QR Code expires in <span style="font-size:28pt">{{currentTime}}</span> minute(s)
+              </span>
+              <br>
+              <span *ngIf="lang != 'th'&& qrcode !='../../assets/loading.gif'" class="header-qr-info">Your data will be saved. QR Code will be always regenerated.</span>
+            </div>
+          </div>
+     
+        </div> 
